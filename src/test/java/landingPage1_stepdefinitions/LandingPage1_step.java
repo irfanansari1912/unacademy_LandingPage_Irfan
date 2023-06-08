@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 
 import com.aventstack.extentreports.Status;
-
+import com.pages.FindCenterPage;
 import com.pages.LandingPage;
 import com.utility.ExcelReader;
 
@@ -18,10 +18,12 @@ import io.cucumber.java.en.When;
 
 public class LandingPage1_step extends Utility{
 	public LandingPage ldp;
+	public FindCenterPage fdp;
 	ExcelReader reader;
 	public void objectMethod() throws IOException {
 
 		ldp = new LandingPage();
+		 fdp = new FindCenterPage();
 
 		
 	}
@@ -121,6 +123,8 @@ public class LandingPage1_step extends Utility{
 	objectMethod();
 	logger.log(Status.PASS, "Step7 is executed");
 	Utility.implicitWait();
+	String actualtitle = fdp.FindacenterTitle();
+	 String expectedTitle = "Unacademy Centres for IIT JEE and NEET UG";
 	Utility.captureScreenshotOnFailure();
     ldp.LandingPage1();
 

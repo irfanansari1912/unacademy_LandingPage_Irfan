@@ -8,9 +8,9 @@
 
 		<classes>
 
-			<class name="LandingPage1_TestRunner.java" />
-			<class name="LandingPage2_TestRunner.java" />
-			
+			<class name="testrunner.LandingPage1_TestRunner" />
+			<class name="testrunner.LandingPage2_TestRunner" />
+			<class name="testrunner.LandingPage_Excel_TestRunner" />
 
 		</classes>
 

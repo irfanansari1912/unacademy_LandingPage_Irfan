@@ -7,30 +7,34 @@ src/main/java:
 		
 	com.pages:
 		LandingPage.java
-		LoginPage.java
-		HomePage.java
-			
+	com.testdata:
+	testdata.xlsx
+	
 	com.utility:
 		Config.java
 		ConfigReader.java
 		Utility.java
+		ExcelReader.java
+		ExtentReporterManager.java
 		
 src/test/java:
 	com.apphooks:
 		ApplicationHooks.java
 	
-	com.loginpage_stepdefinitions:
-		LoginPageSteps.java
+	com.Landingpage_stepdefinitions:
+		LandingPageSteps.java
 		
 	com.testrunner:
-		LoginPage_TestRunner.java	
+		LandingPage_Excel_TestRunner.java
+		LandingPage1_TestRunner.java
+		LandingPage2_TestRunner.java
 		
 src/main/resources:
 	ReadMe
 						
 src/test/resources:
 	features folder
-		LoginPage.feature	
+		LandingPage.feature	
 
 drivers folder:
 	chromedriver.exe

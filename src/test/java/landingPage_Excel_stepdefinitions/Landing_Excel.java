@@ -51,47 +51,7 @@ public class Landing_Excel extends Utility{
 		System.out.println(actualtitle); 
 		Utility.implicitWait();
 	}
-//	@Then("user fill the form given sheetname {string} and rownumber {int}")
-//	public void user_fill_the_from_given_sheetname_and_rownumber_rown_number(String sheetName,int rowNumber) throws InterruptedException, IOException, InvalidFormatException {
-//		   Thread.sleep(10000);
-//	         objectMethod();
-//	       
-//	         ExcelReader reader = new ExcelReader();
-//			 List<Map<String,String>> testData = reader.getData(Config.excelPath, sheetName);
-//			 String str = testData.get(rowNumber).get("Courses");
-//			 ldp.search(str);
-//	         Utility.implicitWait();
-//	         System.out.println("elements are enabled on excel");
-//	}
-//	@When("User Enter the Goal in Goals Feild")
-//	public void user_enter_the_goal_in_goals_feild(String str) throws IOException {
-//		objectMethod();
-//		Utility.implicitWait();
-//		ldp.search(str);
-//		Utility.implicitWait();
-//	}
-//	@When("User enters Goal from given sheetname {string} and rownumber {int}")
-//	public void user_enters_goal_from_given_sheetname_and_rownumber(String sheetName,int rowNumber) throws InterruptedException, IOException, InvalidFormatException {
-////		Thread.sleep(10000);
-////        objectMethod();
-////      
-////         reader = new ExcelReader();
-////		 List<Map<String,String>> testData = reader.getData(Config.excelPath, sheetName);
-////		 String str = testData.get(rowNumber).get("Courses");
-////		 ldp.search(str);
-////        Utility.implicitWait();
-////        System.out.println("elements are enabled on excel");
-//		objectMethod();
-//        Utility.implicitWait();
-//        reader = new ExcelReader();
-//        List<Map<String,String>> testData = reader.getData(Config.excelPath, sheetName);
-//        Thread.sleep(1000);
-//        String str = testData.get(rowNumber).get("Courses");
-//
-//        ldp.search(str);
-//        Thread.sleep(5000);
-//	  
-//	}
+
 	@When("User enters Goal from given sheetname {string} and rownumber {int}")
 	public void user_enters_goal_from_given_sheetname_and_rownumber_row_number(String sheetName,int rowNumber) throws IOException, InterruptedException, InvalidFormatException {
 		objectMethod();

@@ -24,8 +24,8 @@ public class LandingPage extends Utility
 	ExcelReader reader;
 	//driver.manage().window().maxmize();
 	
-//	@FindBy(xpath="//*[@id=\"search-wrapper\"]/div[2]/div/div[2]/ul")
-//	private WebElement UpscCse;
+   //	@FindBy(xpath="//*[@id=\"search-wrapper\"]/div[2]/div/div[2]/ul")
+   //	private WebElement UpscCse;
 	
 	
 	public LandingPage() throws IOException
@@ -56,6 +56,11 @@ public class LandingPage extends Utility
     {
    	center.click(); 
     }
+
+	public String FindacenterTitle() {
+		// TODO Auto-generated method stub
+		return driver.getTitle();
+	}
 
 //	public String textCapture() {
 //		// TODO Auto-generated method stub
